@@ -1,14 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "../components/header";
-import ProductPage from "./productPage";
-import ProductOverview from "./productOverview";
-import CartPage from "./cart";
-import CheckoutPage from "./checkOut";
-import OrdersPage from "./ordersPage";
+
 import Home from "./homeContent";
-import AboutPage from "./aboutPage";
-import ContactPage from "./contactPage";
-import NotFoundPage from "./notFoundPage";
+
 
 export default function HomePage(){
     return(
