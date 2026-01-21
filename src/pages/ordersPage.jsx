@@ -18,7 +18,6 @@ export default function OrdersPage() {
                     }
                 })
 				.then((response) => {
-					console.log(response.data);
 					setOrders(response.data);
 					setLoaded(true);
 				});

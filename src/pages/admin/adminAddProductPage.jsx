@@ -28,7 +28,6 @@ export default function AdminAddProductPage() {
             navigate("/login");
             return;
         }
-		console.log(files);
 
 		const imagePromises = []
 
@@ -43,8 +42,6 @@ export default function AdminAddProductPage() {
 
 		const images = await Promise.all(imagePromises).catch((err)=>{
 			toast.error("Error uploading images. Please try again.");
-			console.log("Error uploading images:");
-			console.log(err);
 			return;
 		});
 
@@ -78,8 +75,6 @@ export default function AdminAddProductPage() {
 
         }catch(err){
             toast.error("Error adding product. Please try again.");
-            console.log("Error adding product:");
-            console.log(err);
         }
     }
 

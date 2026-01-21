@@ -26,7 +26,6 @@ export default function CheckoutPage() {
 
 	function submitOrder() {
 		const token = localStorage.getItem("token");
-		console.log(token);
 		if (token == null) {
 			toast.error("You must be logged in to place an order");
 			navigate("/login");
