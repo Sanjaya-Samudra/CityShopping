@@ -18,6 +18,7 @@ function App() {
 						<Route path="/login" element={<LoginPage />} />
 						<Route path="/register" element={<RegisterPage />} />
 						<Route path="/forgot-password" element={<ForgetPasswordPage />} />
+						<Route path="/admin/*" element={<AdminPage />} />
 					</Routes>
 				</div>
 			</BrowserRouter>
