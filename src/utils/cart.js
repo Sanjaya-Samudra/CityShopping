@@ -1,3 +1,22 @@
+// const sampleCart = [
+//     {
+//         productID: "PROD001",
+//         name: "Sample Product 1",
+//         price: 1999.99,
+//         labelledPrice: 2499.99,
+//         quantity: 1,
+//         image: "https://via.placeholder.com/150"
+//     },
+//     {
+//         productID: "PROD002",
+//         name: "Sample Product 2",
+//         price: 2999.99,
+//         labelledPrice: 3499.99,
+//         quantity: 2,
+//         image: "https://via.placeholder.com/150"
+//     }
+// ]
+
 import toast from "react-hot-toast";
 
 

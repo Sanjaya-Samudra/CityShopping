@@ -1,3 +1,4 @@
+import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -10,8 +11,33 @@ export default function LoginPage() {
 	const [password, setPassword] = useState("");
 	const navigate = useNavigate();
 	const [isLoading, setIsLoading] = useState(false);
-	
+	// const googleLogin = useGoogleLogin({
+	// 	onSuccess: (response) => { 
+	// 		setIsLoading(true);
+	// 		axios.post(import.meta.env.VITE_BACKEND_URL + "/users/google-login", {
+	// 			token: response.access_token,
+	// 		}).then((res) => {
+	// 			localStorage.setItem("token", res.data.token);
+	// 			if (res.data.role == "admin") {
+	// 				navigate("/admin");
+	// 			} else {
+	// 				navigate("/");
+	// 			}
+	// 			toast.success("Login successful!.");
+	// 			setIsLoading(false);
+	// 		}).catch((err) => {
+	// 			console.log(err);
+	// 		});
+	// 		setIsLoading(false);
+	// 	 },
+	// 	onError: () => { toast.error("Google Login Failed"); },
+	// 	onNonOAuthError: () => { toast.error("Google Login Failed"); },
+	// })
+
 	async function login() {
+		console.log("Login button clicked");
+		console.log("Email:", email);
+		console.log("Password:", password);
 		setIsLoading(true);
 		try {
 			const res = await axios.post(

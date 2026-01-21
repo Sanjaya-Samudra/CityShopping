@@ -62,6 +62,7 @@ export default function RegisterPage() {
 		} catch (err) {
 			//alert("Login failed! Please check your credentials and try again.");
 			toast.error("Registration failed! Please check your data and try again.");
+			console.log(err);
             setIsLoading(false);
 		}
 	}

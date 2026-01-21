@@ -12,6 +12,7 @@ export default function ProductPage() {
 			axios
 				.get(import.meta.env.VITE_BACKEND_URL + "/products")
 				.then((response) => {
+					console.log(response.data);
 					setProducts(response.data);
 					setLoaded(true);
 				});

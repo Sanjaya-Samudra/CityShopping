@@ -3,7 +3,6 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { BsChevronUp } from "react-icons/bs";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { emptyCart } from "../utils/cart";
 
 export default function CheckoutPage() {
 	const location = useLocation();
@@ -59,7 +58,6 @@ export default function CheckoutPage() {
 				}
 			)
 			.then(() => {
-				emptyCart();
 				toast.success("Order placed successfully");
 				navigate("/orders");
 			})

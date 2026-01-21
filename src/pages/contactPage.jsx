@@ -8,6 +8,46 @@ import {
 } from "react-icons/fi";
 
 export default function ContactPage() {
+	// const [formData, setFormData] = useState({
+	// 	name: "",
+	// 	email: "",
+	// 	phone: "",
+	// 	subject: "",
+	// 	message: "",
+	// });
+
+	// const [isSubmitting, setIsSubmitting] = useState(false);
+
+	// const handleChange = (e) => {
+	// 	setFormData({
+	// 		...formData,
+	// 		[e.target.name]: e.target.value,
+	// 	});
+	// };
+
+	// const handleSubmit = async (e) => {
+	// 	e.preventDefault();
+		
+	// 	if (!formData.name || !formData.email || !formData.message) {
+	// 		toast.error("Please fill in all required fields");
+	// 		return;
+	// 	}
+
+	// 	setIsSubmitting(true);
+		
+	// 	// Simulate form submission (replace with actual API call)
+	// 	setTimeout(() => {
+	// 		toast.success("Thank you for your message! We'll get back to you soon.");
+	// 		setFormData({
+	// 			name: "",
+	// 			email: "",
+	// 			phone: "",
+	// 			subject: "",
+	// 			message: "",
+	// 		});
+	// 		setIsSubmitting(false);
+	// 	}, 1000);
+	// };
 
 	return (
 		<div className="w-full min-h-[calc(100vh-100px)] bg-gradient-to-b from-primary to-white text-secondary">
@@ -118,6 +158,123 @@ export default function ContactPage() {
 							</p>
 						</div>
 					</div>
+
+					{/* Contact Form */}
+					{/* <div className="lg:col-span-2">
+						<div className="bg-white/60 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-secondary/10">
+							<h2 className="text-2xl font-bold text-secondary mb-6">
+								Send us a Message
+							</h2>
+							
+							<form onSubmit={handleSubmit} className="space-y-6">
+								<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+									<div>
+										<label 
+											htmlFor="name" 
+											className="block text-sm font-semibold text-secondary mb-2"
+										>
+											Full Name <span className="text-red-500">*</span>
+										</label>
+										<input
+											type="text"
+											id="name"
+											name="name"
+											value={formData.name}
+											onChange={handleChange}
+											required
+											className="w-full px-4 py-3 rounded-lg border-2 border-secondary/20 focus:border-accent focus:outline-none transition bg-white/50"
+											placeholder="John Doe"
+										/>
+									</div>
+
+									<div>
+										<label 
+											htmlFor="email" 
+											className="block text-sm font-semibold text-secondary mb-2"
+										>
+											Email Address <span className="text-red-500">*</span>
+										</label>
+										<input
+											type="email"
+											id="email"
+											name="email"
+											value={formData.email}
+											onChange={handleChange}
+											required
+											className="w-full px-4 py-3 rounded-lg border-2 border-secondary/20 focus:border-accent focus:outline-none transition bg-white/50"
+											placeholder="john@example.com"
+										/>
+									</div>
+								</div>
+
+								<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+									<div>
+										<label 
+											htmlFor="phone" 
+											className="block text-sm font-semibold text-secondary mb-2"
+										>
+											Phone Number
+										</label>
+										<input
+											type="tel"
+											id="phone"
+											name="phone"
+											value={formData.phone}
+											onChange={handleChange}
+											className="w-full px-4 py-3 rounded-lg border-2 border-secondary/20 focus:border-accent focus:outline-none transition bg-white/50"
+											placeholder="+94 77 123 4567"
+										/>
+									</div>
+
+									<div>
+										<label 
+											htmlFor="subject" 
+											className="block text-sm font-semibold text-secondary mb-2"
+										>
+											Subject
+										</label>
+										<input
+											type="text"
+											id="subject"
+											name="subject"
+											value={formData.subject}
+											onChange={handleChange}
+											className="w-full px-4 py-3 rounded-lg border-2 border-secondary/20 focus:border-accent focus:outline-none transition bg-white/50"
+											placeholder="Product inquiry"
+										/>
+									</div>
+								</div>
+
+								<div>
+									<label 
+										htmlFor="message" 
+										className="block text-sm font-semibold text-secondary mb-2"
+									>
+										Message <span className="text-red-500">*</span>
+									</label>
+									<textarea
+										id="message"
+										name="message"
+										value={formData.message}
+										onChange={handleChange}
+										required
+										rows={6}
+										className="w-full px-4 py-3 rounded-lg border-2 border-secondary/20 focus:border-accent focus:outline-none transition bg-white/50 resize-none"
+										placeholder="Tell us how we can help you..."
+									/>
+								</div>
+
+								<button
+									type="submit"
+									disabled={isSubmitting}
+									className="w-full md:w-auto px-8 py-3 bg-accent text-white rounded-full font-semibold hover:bg-accent/90 transition shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+								>
+									<FiSend />
+									{isSubmitting ? "Sending..." : "Send Message"}
+								</button>
+							</form>
+						</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
